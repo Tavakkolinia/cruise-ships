@@ -1,3 +1,4 @@
-const hut = () => {
- return 3 * 4;
-}
+
+//ship object
+
+//starting point with prototype constructor 
