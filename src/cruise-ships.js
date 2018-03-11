@@ -1,9 +1,18 @@
-function CruiseShip(startingPort) {
-  this.startingPort = startingPort;
+function CruiseShip(currentPort) {
+  this.currentPort = currentPort;
 }
-
-CruiseShip.prototype.setSail = function() {
-
+function Port(portName) {
+  this.portName = portName;
 }
-const ship = new CruiseShip;
-module.exports = CruiseShip; 
+CruiseShip.prototype.setSail = function () {
+  this.currentPort = false;
+};
+CruiseShip.prototype.dock = function (port) {
+  this.currentPort = port;
+};
+const ship = new CruiseShip();
+const port = new Port('Dover');
+
+
+module.exports = CruiseShip;
+
