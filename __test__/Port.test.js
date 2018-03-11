@@ -1,14 +1,11 @@
-const Port = require('../src/cruise-ships.js');
-const CruiseShip = require('../src/cruise-ships.js');
+const Port = require('../src/Port.js');
 
 describe('Port', () => {
   it('it can be instantiated', () => {
-    expect(new Port()).toBeInstanceOf(Object);
+    expect(new Port('Dover')).toBeInstanceOf(Object);
   });
   it('the port has a name', () => {
     const port = new Port('Dover');
-    const ship = new CruiseShip(port);
-    expect(ship.portName).toEqual('Dover');
+    expect(port.portName).toEqual('Dover');
   });
 });
-
