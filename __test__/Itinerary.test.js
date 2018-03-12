@@ -1,6 +1,7 @@
 const Port = require('../src/Port.js');
 const Itinerary = require('../src/Itinerary.js');
 
+
 describe('Itinerary', () => {
   it('it can be instantiated', () => {
     expect(new Itinerary('Dover')).toBeInstanceOf(Object);
