@@ -15,8 +15,10 @@ describe('CruiseShip', () => {
         addShip: jest.fn(),
       };
 
-
-      const itinerary = new Itinerary([port]);
+      itinerary = {
+        ports: [port],
+      };
+        
       ship = new CruiseShip(itinerary);
     });
     it('it can be instantiated', () => {
@@ -41,7 +43,9 @@ describe('CruiseShip', () => {
         removeShip: jest.fn(),
         addShip: jest.fn(),
       };
-      const itinerary = new Itinerary([dover, calais]);
+      itinerary = {
+        ports: [calais, dover],
+      };
       ship = new CruiseShip(itinerary);
       ship.dock();
       expect(calais.addShip).toHaveBeenCalledWith(ship);
