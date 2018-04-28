@@ -9,7 +9,6 @@
   CruiseShip.prototype.setSail = function () {
     this.currentPort.removeShip(this);
     this.currentPort = false;
-    this.renderMessageBox(`Now departing ${ship.currentPort.name}`);
   };
   CruiseShip.prototype.dock = function () {
     const itinerary = this.itinerary;
