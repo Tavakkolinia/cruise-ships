@@ -1,62 +1,62 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #viewport {
-    width: 640px;
-    height: 256px;
-    position: relative;
-    overflow-x: auto;
-    background-image: url('../images/water0.png');
+  width: 640px;
+  height: 256px;
+  position: relative;
+  overflow-x: auto;
+  background-image: url('../images/water0.png');
 }
 #ports {
-    margin-top: 96px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-around;
 }
 #ports > .port {
-    width: 64px;
-    height: 32px;
-    background-image: url('../images/port.png');
+  width: 64px;
+  height: 32px;
+  background-image: url('../images/port.png');
 }
 #ship {
-    width: 128px;
-    height: 54px;
-    background-image: url('../images/ship.png');
-    position: absolute;
+  width: 128px;
+  height: 54px;
+  background-image: url('../images/ship.png');
+  position: absolute;
 }
 #sailbutton {
-    border: 0;
-    background-color: rgb(251, 110, 54);
-    border-bottom: 2px solid #d8040f;
-    color: black;
-    padding: 18px 20px;
-    position: absolute;
-    bottom: 0;
-    left: 19px;
-    right: 19px;
-    width: 100%;
-    font-family: 'Great Vibes', cursive;
-    font-size: 22px;
+  border: 0;
+  background-color: rgb(251, 110, 54);
+  border-bottom: 2px solid #d8040f;
+  color: black;
+  padding: 14px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
 }
-  #sailbutton:focus {
-    background-color: #d80455;
-    border-bottom-width: 0;
-    padding-top: 14px;
+#sailbutton:focus {
+  background-color: #d80455;
+  border-bottom-width: 0;
+  padding-top: 14px;
 }
 #message {
-    padding: 12px;
-    font-family: 'Great Vibes', cursive;
-    font-size: 27px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    border-top: 3px solid black;
-    background-color: white;
+  position: absolute;
+  right: 0;
+  padding: 30px 20px 0 20px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 27px;
+  height: 100%;
+  width: 65px;
+  bottom: 0;
+  border-top: 3px solid black;
+  background-color: white;
 }
-    
