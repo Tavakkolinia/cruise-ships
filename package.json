@@ -12,7 +12,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
-    "jest": "^22.4.3"
+    "jest": "^29.3.1"
   },
   "dependencies": {
     "merge": "^1.2.1"
